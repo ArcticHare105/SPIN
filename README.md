@@ -1,4 +1,4 @@
 # SPIN
-The offical implementation of "Efficient Image Super-Resolution with Superpixel Token Interaction" (ICCV2023)
+The offical implementation of "Lightweight Image Super-Resolution with Superpixel Token Interaction" (ICCV2023)
 ---
 Coming soon!
