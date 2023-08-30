@@ -26,11 +26,6 @@ Datas can be download from Baidu cloud disk [[url]](https://pan.baidu.com/s/15Wj
 python train.py --config ./configs/spin_light_x4.yml
 ```
 
-## Testing
-```
-sh test_script.sh
-```
-
 
 ## Citation
 
