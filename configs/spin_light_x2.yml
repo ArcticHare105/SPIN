@@ -1,0 +1,36 @@
+model: 'spin'
+## parameters for plain
+upscale: 2
+rgb_range: 255
+colors: 3
+
+dim: 40
+block_num: 8
+heads: 1
+qk_dim: 24
+mlp_dim: 72
+stoken_size: [12, 16, 20, 24, 12, 16, 20, 24]
+
+## parameters for model training
+patch_size: 128
+batch_size: 64
+data_repeat: 80
+data_augment: 1
+
+epochs: 1000
+lr: 0.0002
+decays: [250, 400, 450, 475, 500]
+gamma: 0.5
+log_every: 10
+test_every: 1
+log_path: "./experiments"
+log_name:
+output_folder : "./visual_results"
+
+## hardware specification
+gpu_ids: [0,1,2,3] #
+threads: 8
+
+## data specification
+data_path: '../../SR_datasets'
+eval_sets: ['Set5', 'Set14', 'B100', 'Urban100', 'Manga109']
