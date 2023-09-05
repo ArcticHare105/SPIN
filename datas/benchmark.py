@@ -59,14 +59,4 @@ class Benchmark(data.Dataset):
         return lr, hr
 
 if __name__ == '__main__':
-    HR_folder = '/Users/xindongzhang/Documents/SRData/benchmark/B100/HR'
-    LR_folder = '/Users/xindongzhang/Documents/SRData/benchmark/B100/LR_bicubic'
-    benchmark = Benchmark(HR_folder, LR_folder, scale=2, colors=1, store_in_ram=False)
-    benchmark = DataLoader(dataset=benchmark, batch_size=1, shuffle=False)
-
-    print("numner of sample: {}".format(len(benchmark.dataset)))
-    start = time.time()
-    for lr, hr in benchmark:
-        print(lr.shape, hr.shape)
-    end = time.time()
-    print(end - start)
+    pass
