@@ -19,7 +19,5 @@ scikit-image==0.15.0
 scipy==1.7.3
 tifffile==2021.11.2
 timm==0.5.4
-torch==1.7.0
-torchvision==0.8.1
 tqdm==4.36.1
 typing-extensions==4.1.1
