@@ -8,12 +8,7 @@ source = '''
 
 #include <torch/extension.h>
 #include <torch/types.h>
-#include <ATen/core/TensorAccessor.h>
-#include <ATen/cuda/CUDAContext.h>
-
-#include <THC/THC.h>
-#include <THC/THCAtomics.cuh>
-#include <THC/THCDeviceUtils.cuh>
+#include <cuda/std/type_traits>                                                                                                                            
 
 template <typename scalar_t>
 __global__ void forward_kernel(
